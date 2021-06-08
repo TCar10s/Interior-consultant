@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Interior Consultant</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="nav flex c-y c-x" id="nav">
+      <ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Collection</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+      <div class="flex s-b c-y">
+        <a href="#">
+          <div class="logo">
+            <span>This Interior</span>
+          </div>
+        </a>
+        <button class="hamburger-button" id="hamburger-button" onclick="toggleNavigation();">
+          <div class="hamburger-button__bar"></div>
+          <div class="hamburger-button__bar"></div>
+          <div class="hamburger-button__bar"></div>
+        </button>
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="main-content">
+        <div class="content__info">
+          <h1 class="info__title">Modern interior</h1>
+          <p class="info__description">
+            A full-Service residential & commercial interior design and staging company offering professional organizing
+            &
+            eco-services.
+          </p>
+          <a class="info__btn flex c-y" href="#">
+            Read more
+            <span class="material-icons">
+              arrow_right_alt
+            </span>
+          </a>
+        </div>
+
+        <div class="content__image">
+
+          <img src="./assets/img/photo1.png" alt="preview">
+
+          <div class="card">
+            <div class="flex c-y g-1">
+              <img src="./assets/img/photo2.png" class="card__img" alt="user">
+              <div class="card__user">
+                <p class="user__name">Aliza Webber</p>
+                <p class="user__role">Interior designer</p>
+              </div>
+            </div>
+            <div class="card__bio">
+              <p>Designed in 2020 by Aliza Webber</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="copyright">
+      create by
+      <a href="https://github.com/TCa10s" target="_blank">TCar10s</a> -
+      devChallenges.io
+    </p>
+  </footer>
+  
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
