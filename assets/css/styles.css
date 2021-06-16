@@ -74,7 +74,6 @@ ul {
 .container {
   max-width: 120rem;
   padding: 1.9rem 1.2rem;
-
   margin: 0 auto;
 }
 
@@ -109,7 +108,6 @@ ul {
 
   transform-origin: 2.1rem;
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-
 }
 
 .hamburger-button__bar:nth-child(1) {
@@ -151,7 +149,7 @@ ul {
 
 .nav a {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color-light);
 }
 
@@ -165,6 +163,7 @@ ul {
 
 .nav-item a {
   transition: padding 0.2s ease-in-out;
+  color: var(--color-light);
 }
 
 .nav-item a:hover {
@@ -188,7 +187,6 @@ ul {
 
 .content__image {
   position: relative;
-  margin-bottom: 14rem;
 }
 
 .card {
@@ -234,6 +232,7 @@ ul {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   padding: 1rem;
+  margin-top: 12rem;
 }
 
 .copyright,
@@ -244,4 +243,57 @@ a {
 
 .copyright a {
   font-weight: 700;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+/* Desktop desing */
+
+@media (min-width: 810px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .nav-desktop ul {
+    display: flex;
+    align-items: center;
+    gap: 8.6rem;
+  }
+
+  .nav-item {
+    margin-top: 0;
+
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .container {
+    max-width: 144rem;
+    padding: 4.2rem 7.7rem;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .content__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info__btn {
+    margin-bottom: 0rem;
+  }
 }
